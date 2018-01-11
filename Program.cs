@@ -10,43 +10,51 @@ namespace DateCalc
     {
         //***Variable Declarations
         static bool runProgram = true, getFirstDate = true, getSecondDate = true;
+        static DateTime firstDate, secondDate;
+        static string firstDateString, secondDateString;
+        
 
         static void Main(string[] args)
         {
             //***User input 2 dates of month/day/year
-            Console.WriteLine("Please enter your first date in the format of month/day/year");
+            Console.WriteLine("Please enter your first date in the format of MM/DD/YYY");
             Console.WriteLine("For example: January 1, 2010, should be entered as 01/01/2010.");
             while (runProgram)
             {
                 while (getFirstDate)
-                {
-                    DateTime firstDate;
+                {                    
                     if (DateTime.TryParse(Console.ReadLine(), out firstDate))
                     {
-                        Console.WriteLine("You entered: " + firstDate.ToShortDateString());
+                        Console.Clear();
+                        Console.WriteLine("Your first date is: " + firstDate.ToShortDateString());         
                         getFirstDate = false;
                     }
                     else
                     {
-                        Console.WriteLine("Please try again.");
+                        Console.Clear();
+                        Console.WriteLine("Oops! You need to enter the date in the right format: MM/DD/YYYY");
+                        
                     }
                 }
                 while (getSecondDate)
-                {
-                    Console.Clear();
-                    Console.WriteLine("Please enter another date in the same for");
-                    DateTime secondDate;
+                {                   
+                    Console.WriteLine("Please enter another date.");
                     if (DateTime.TryParse(Console.ReadLine(), out secondDate))
                     {
-                        Console.WriteLine("You entered: " + secondDate.ToShortDateString());
+                        Console.WriteLine("Your second date is: " + secondDate.ToShortDateString());
                         getSecondDate = false;
                     }
                     else
                     {
-                        Console.WriteLine("Please try again");
+                        Console.Clear();
+                        Console.WriteLine("Oops! You need to enter the date in the right format.");
+                        Console.WriteLine("Your first date is: " + firstDate.ToShortDateString());
                     }
                 }
-                Console.WriteLine("Noice");
+                Console.Clear();
+                Console.WriteLine("Your first date is: {0}", firstDate.ToShortDateString());
+                Console.WriteLine("Your second date is: {0}", secondDate.ToShortDateString());
+                Console.ReadKey();
             }
             
 
