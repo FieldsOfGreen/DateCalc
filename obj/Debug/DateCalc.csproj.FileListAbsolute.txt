@@ -1,0 +1,7 @@
+c:\users\skeletor\source\repos\DateCalc\DateCalc\bin\Debug\DateCalc.exe.config
+c:\users\skeletor\source\repos\DateCalc\DateCalc\bin\Debug\DateCalc.exe
+c:\users\skeletor\source\repos\DateCalc\DateCalc\bin\Debug\DateCalc.pdb
+c:\users\skeletor\source\repos\DateCalc\DateCalc\obj\Debug\DateCalc.csprojResolveAssemblyReference.cache
+c:\users\skeletor\source\repos\DateCalc\DateCalc\obj\Debug\DateCalc.csproj.CoreCompileInputs.cache
+c:\users\skeletor\source\repos\DateCalc\DateCalc\obj\Debug\DateCalc.exe
+c:\users\skeletor\source\repos\DateCalc\DateCalc\obj\Debug\DateCalc.pdb
