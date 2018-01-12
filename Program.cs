@@ -69,6 +69,7 @@ namespace DateCalc
                 else
                 {
                     runProgram = false;
+
                 }          
             }            
         }
